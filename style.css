@@ -1,0 +1,71 @@
+/* ---****---
+google fonts
+----***---- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* ___body base___* */
+body{
+    background-color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---__*
+header styles 
+___--** */
+
+header{
+    background: #161616f1; 
+    border-radius: 30px;
+    height: 600px;
+    margin: 50px 120px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 80px 0;
+    margin-left: 80px;
+    flex-direction: column;
+    align-items: center;
+} 
+.world-cup h1{
+    font-weight: 700;
+    font-size: 56px;
+    margin-bottom: 0;
+    color: white; 
+}
+.world-cup p{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+}
+.watch-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    width: 150px;
+    height: 30px;
+    background-color: #DD0000;
+    border-radius: 5px;
+    transition: width 2s ease-in-out 0.75s, height 2s ease-in-out 0.75s, transform 3s;
+}
+/* hover style with transition and transform  */
+.watch-link:hover{
+    height:50px ;
+    width: 200px;
+    justify-content: center;
+    background-color: blueviolet;
+    transform: scale(1.1);
+}
+.anchor a{
+    text-decoration: none;
+    color: white;
+}
+.arrow{
+    color: #fff;
+}
+.player-imges img {
+   width: 96%;
+}
