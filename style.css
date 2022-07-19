@@ -69,3 +69,47 @@ header{
 .player-imges img {
    width: 96%;
 }
+
+/*__***-*--------
+ match details styles
+ ----- ___** */
+aside {
+    width: 300px;
+    height: 330px;
+    margin-left: 120px;
+    background: #161616;
+    border-radius: 10px;
+}
+.aside-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.link-btn{
+    height: 40px;
+    width: 250px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 30px;
+    text-align: center;
+    padding-top: 10px;
+} 
+ .aside-nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #161616;
+ }
+
+ #blog{
+    background-color: #DD0000;
+    transition: width 1.5s ease-in-out 0.75s, height 1.5s ease-in-out 0.75s,;
+ }
+ #blog:hover{
+    width: 260px;
+    background-color: rgba(0, 255, 255, 0.822);
+ }
+ #blog a{
+    color: white;
+ }
