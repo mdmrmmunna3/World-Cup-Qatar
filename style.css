@@ -8,25 +8,30 @@ body{
     background-color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
 }
-
+.main-container {
+    margin-top: 3%;
+    margin-right: 5%;
+    margin-left: 7%;
+    margin-bottom: 5%;
+    border-radius: 30px;
+}
 /* ---__*
 header styles 
 ___--** */
 
 header{
+    height: 600px;
     background: #161616f1; 
     border-radius: 30px;
-    height: 600px;
-    margin: 50px 120px;
+    margin-bottom: 100px;
 }
 
 .container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    margin: 80px 0;
-    margin-left: 80px;
+    
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
 } 
 .world-cup h1{
     font-weight: 700;
@@ -67,7 +72,7 @@ header{
     color: #fff;
 }
 .player-imges img {
-   width: 96%;
+   width: 83%;
 }
 
 /*__***-*--------
@@ -76,9 +81,15 @@ header{
 aside {
     width: 300px;
     height: 330px;
-    margin-left: 120px;
+    /* margin-left: 120px; */
     background: #161616;
     border-radius: 10px;
+    bottom: 27px;
+    float: left;
+    position: sticky;
+    margin-right: 24px;
+    
+    
 }
 .aside-nav{
     display: flex;
@@ -112,4 +123,55 @@ aside {
  }
  #blog a{
     color: white;
+ }
+
+
+ .blogs-details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 16px;
+    row-gap: 24px;
+    width: 250px;
+ }
+
+ .blogs{
+    width: 280px;
+    height: 400px;
+ }
+
+ .blog-imges{
+    border: 1px solid rgba(211, 211, 211, 0.473);
+    border-radius: 10px;
+    width: 250px;
+ }
+
+ .blog-imges img{
+    width: 250px;
+    height: 180px;
+ }
+
+ .blog-info h1{
+    font-size: 16px;
+    width: 170px;
+    color: #161616;
+    border: 1px solid;
+    text-align: center;
+    margin-left: 10px;
+ }
+
+ .blog-info p {
+    color: #161616;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+ }
+
+ .icons{
+    
+    display: flex;
+    justify-content: space-around;
+ }
+ 
+ .icons .fa-clock, .fa-comment-dots{
+    margin-right: 10px;
  }
