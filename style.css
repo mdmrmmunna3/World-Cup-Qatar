@@ -7,6 +7,7 @@ google fonts
 body{
     background-color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
+    
 }
 .main-container {
     margin-top: 3%;
@@ -26,7 +27,7 @@ ___--** */
     padding-left: 5%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    
+    letter-spacing: 1.5px;
     align-items: center;
 }
 
@@ -71,24 +72,21 @@ ___--** */
 .arrow{
     color: #fff;
 }
-.player-imges img {
-   width: 81%;
-}
 
 /*__***-*--------
  match details styles
  ----- ___** */
+ .section-container{
+   display: flex;
+   
+ }
 aside {
-    width: 300px;
-    height: 330px;
+    width: 250px;
+    height: 250px;
     background: #161616;
     border-radius: 10px;
-    bottom: 27px;
-    float: left;
-    position: sticky;
-    margin-right: 24px;
-    
-    
+    bottom: 14px;
+    margin-right: 5%;
 }
 .aside-nav{
     display: flex;
@@ -99,12 +97,12 @@ aside {
 
 .link-btn{
     height: 40px;
-    width: 250px;
+    width: 200px;
     background: #FFFFFF;
     border-radius: 10px;
-    margin: 30px;
+    margin: 20px;
     text-align: center;
-    padding-top: 10px;
+    
 } 
  .aside-nav a{
     text-decoration: none;
@@ -117,13 +115,25 @@ aside {
     transition: width 1.5s ease-in-out 0.75s, height 1.5s ease-in-out 0.75s,;
  }
  #blog:hover{
-    width: 260px;
+    width: 220px;
     background-color: rgba(0, 255, 255, 0.822);
  }
  #blog a{
     color: white;
  }
 
+
+ #upcoming{
+   background-color: #3308f3;
+   transition: width 1.5s ease-in-out 0.75s, height 1.5s ease-in-out 0.75s,;
+}
+#upcoming:hover{
+   width: 220px;
+   background-color: orange;
+}
+#upcoming a{
+   color: white;
+}
 
  .blogs-details{
     display: grid;
@@ -217,7 +227,7 @@ footer{
  }
  
  .styles{
-     padding: 24px;
+     padding: 10px;
      color: #FFFFFF;
  }
 
@@ -226,7 +236,7 @@ footer{
   ___****___----  */
 
   /* ***-----mobile devices ----- */
-  
+   
   @media only screen and (max-width:600px) {
    .main-container{
     height: 100%;
@@ -236,23 +246,30 @@ footer{
     margin-left: 0.75%;
     margin-bottom: 2%;
    }
-   .container, .blogs-details, .footer-details{
+   .container, .blogs-details, .footer-details, .main-germany-france-container{
     grid-template-columns: repeat(1,1fr);
     
    }
-   .world-cup, .player-imges, .blogs{
+   .world-cup, .player-imges, .blogs, .social-icon{
     width: 100%;
     flex-direction: column;
    }
    .world-cup{
     padding-bottom: 6%;
    }
-
+   .section-container{
+      flex-direction: column;
+   }
+   .player-imges img{
+      height: 100%;
+      width: 80%;
+   }
    aside{
     flex-direction: column;
     width: 100%;
-    height: 330px;
+    height: 100%;
     background-color: white;
+    
    }
    .link-btn{
     border: 1px solid;
@@ -270,19 +287,191 @@ footer{
     margin-left: 25%;
    }
    .blog-imges{
-    /* width: 350px;
-    height: 380px; */
-    width: 330px;
+    width: 390px;
     height: 388.69px;
-    margin-left: 10%;
+    
     
    }
    .blog-imges img{
     width: 96%; 
    }
    
-   .footer-style{
+   .footer-style {
     flex-direction: column;
-    
    }
+
+   .social-icon{
+      flex-direction: column;
+      row-gap: 0;
+   }
+   .view-button{
+      display: none;
+   }
+
+   .main-germany-france-details{
+      grid-template-columns: repeat(1,1fr);
+   }
+  } 
+
+  /* ----------**table devics style----------** */
+
+
+  
+  @media only screen and (min-width:601px) and (max-width:992px) {
+   .main-container{
+      height: 100%;
+      width: 100%;
+      margin-top: 1%;
+      margin-right: 1%;
+      margin-left: 0.75%;
+      margin-bottom: 2%;
+     }
+     .container, .blogs-details, .player-imges, .footer-details{
+      grid-template-columns: repeat(2,1fr);
+      
+     }
+     .world-cup, .blogs{
+      width: 100%;
+      flex-direction: column;
+     }
+     .player-imges{
+      height: 100%;
+     }
+     .player-imges img{
+      height: 100%;
+      width: 100%;
+     }
+     .blogs{
+      margin-left: 2%;
+     }
+     .world-cup{
+      padding-bottom: 6%;
+     }
+     .section-container{
+        flex-direction: column;
+     }
+     aside{
+      border: none;
+      padding: 0;
+      width: 100%;
+      height: 200px;
+      background-color: white;
+      margin-right: 5%;
+     }
+     .aside-nav{
+      flex-direction: row;
+      padding: 0;
+     }
+     .link-btn{
+      border: 1px solid;
+     }
+     .world-cup-titel{
+      font-size: 2vh;
+      
+     }
+     .world-cup-info{
+      text-overflow: ellipsis;
+      font-size: 1vh;
+     }
+  
+     .watch-link{
+      margin-left: 25%;
+     }
+     .blog-imges{
+      width: 345px;
+      height: 388.69px;
+      
+      
+     }
+     .blog-imges img{
+      width: 95%; 
+     }
+     
+     .footer-style {
+      flex-direction: row;
+      flex-wrap: wrap;
+     }
+  
+     .social-icon{
+        flex-direction: row;
+        row-gap: 0;
+     }
+     .view-button{
+      height: 40px;
+      width: 200px;
+      background-color: #DD0000;
+      border-radius: 4px;
+      text-align: center;
+      margin-left: 40%;
+     }
+     .view-button .view-btn{
+      text-decoration: none;
+      color: white;
+      
+     }
+
+   } 
+   /* ____view-btn off----___ */
+
+   @media only screen and (min-width:993px) {
+      .view-button {
+          display: none
+      }
   }
+
+
+  /* ---all-groups ------*/
+.groups{
+   height: 340px;
+}
+.group-name{
+   background-color: #DD0000;
+   text-align: center;
+   padding: 5px 0;
+}
+.team-name{
+   background-color: aqua;
+   text-align: center;
+   color: blue;
+   padding: 10px 0;
+}
+   /*--------------------------------------------------
+------------ upcoming website ----------------------------------------
+----------------------------------------------------- */
+
+.argentina-vs-brazil {
+   display: flex;
+   align-items: center;
+   margin-left: 12%;
+   margin-top: 20px;
+}
+
+.argentina {
+   width: 100%;
+}
+
+.argentina img {
+   width: 60px;
+   height: 60px;
+}
+
+.brazil {
+   width: 100%;
+}
+
+.brazil img {
+   width: 60px;
+   height: 60px;
+}
+
+.midd-vs-text {
+   margin-right: 15px;
+}
+
+.match {
+   margin-left: 12%;
+} 
+
+.match span{
+   padding-right: 10px;
+}
